@@ -1,11 +1,15 @@
 <h1> Welcome to Message Board </h1>
 
 <p>We hope you find your answers here.</p>
+<h2>List of Questions That You May Be Interested In:</h2>
 
 {{#each model as |question|}}
   {{question-tile question=question}}
 {{/each}}
 
+<div class="newQuestion">
+  {{add-question newQuestionSave='saveAtIndex'}}
+</div>
 <br>
 <hr>
 {{#link-to 'about'}}About{{/link-to}} |

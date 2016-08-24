@@ -1,0 +1,27 @@
+{{#if editQuestionForm}}
+  <h3>Edit {{model.author}}</h3>
+  <div class="editQuestion">
+    <form>
+      <div class="form-group">
+        <label for="question">Your Question: </label>
+        {{input value=question id="question" placeholder=model.question}}
+      </div>
+      <div class="form-group">
+        <label for="author">Your Name: </label>
+        {{input value=author id="author" placeholder=model.author}}
+      </div>
+      <div class="form-group">
+        <label for="date">Date: </label>
+        {{input value=date id="date" placeholder=model.date}}
+      </div>
+      <div class="form-group">
+        <label for="notes">Additional Information: </label>
+        {{input value=notes id="notes" placeholder=model.notes}}
+      </div>
+
+      <button type="button" class="btn btn-outline btn-primary" {{action 'edit' model}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+  <button type="button" class="btn btn-outline btn-warning btn-lg" {{action 'editQuestionForm'}}>Edit a Question</button>
+{{/if}}

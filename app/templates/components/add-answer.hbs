@@ -1,0 +1,20 @@
+{{#if addNewAnswer}}
+  <h2>New Answer</h2>
+  <div class="newAnswer">
+    <form>
+      <div class="form-group">
+        <label for="content">Answer:</label>
+        {{input value=content id="content"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Your Name:</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <button class="btn btn-primary btn-outline btn-sm" {{action 'save'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-primary btn-outline btn-sm" {{action 'answerFormShow'}}>Add Answer</button>
+{{/if}}

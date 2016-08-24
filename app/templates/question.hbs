@@ -3,3 +3,15 @@
 <h5>Tags: {{model.notes}}</h5>
 
 {{edit-question model=model editQuestion="editAtQuestionRoute"}}
+<br>
+
+<div class="answerList">
+  <h4>Answers</h4>
+  <ul>
+    {{#each model.asnwers as |answer|}}
+      <li>{{answer.content}} by {{answer.author}}</li>
+    {{/each}}
+  </ul>
+
+  {{add-answer save="save" question=model}}
+</div>

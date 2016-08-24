@@ -3,7 +3,7 @@
 <p>We hope you find your answers here.</p>
 <h2>List of Questions That You May Be Interested In:</h2>
 <div class="questionList">
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     <li class="list-group-item">
       {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
     </li>

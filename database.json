@@ -1,0 +1,17 @@
+{ "questions": [{
+    "question": "How far is it from the Earth to the Moon?",
+    "author": "Alan Smith",
+    "date": "2016-08-11",
+    "notes": "I am interested in space science!"
+  }, {
+    "question": "Why is hot in the desert?",
+    "author": "Brian Laudrup",
+    "date": "2016-08-12",
+    "notes": "I am interested in temperature."
+  }, {
+    "question": "What is the GMT?",
+    "author": "Gareth Bale",
+    "date": "2016-08-15",
+    "notes": "interested in time counting."
+  }]
+}

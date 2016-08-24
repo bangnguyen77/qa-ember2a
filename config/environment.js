@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: 'xyz',
-      authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
-      databaseURL: 'https://YOUR-FIREBASE-APP.firebaseapp.com',
-      storageBucket: 'YOUR-FIREBASE-APP.appspot.com',
+      apiKey: "AIzaSyCzu8nzgl-cH-RQ_l2Hnm_LRDZ_8XDq5Cw",
+      authDomain: "qa-ember2a.firebaseapp.com",
+      databaseURL: "https://qa-ember2a.firebaseio.com",
+      storageBucket: "qa-ember2a.appspot.com",
     },
 
     APP: {

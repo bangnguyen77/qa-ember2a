@@ -1,6 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
+  // fullQuestion: Ember.computed('question.author', 'question.date', 'question.notes', function() {
+  //   return this.get('question.author') + ' made this question on ' + this.get('question.date.') + ' He/She is interested in ' + this.get('question.notes');
+  // }),
+
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },

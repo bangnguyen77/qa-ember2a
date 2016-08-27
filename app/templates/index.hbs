@@ -5,7 +5,8 @@
 <div class="questionList">
   {{#each model.questions as |question|}}
     <li class="list-group-item">
-      {{question-unanswered question}} {{question-popularity question}} {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
+      {{question-unanswered question}} {{question-popularity question}}
+      {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
     </li>
   {{/each}}
 </div>

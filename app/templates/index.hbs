@@ -6,8 +6,10 @@
   {{#each model.questions as |question|}}
     <li class="list-group-item">
       {{question-unanswered question}} {{question-popularity question}}
-      {{#link-to 'question' question.id}}{{question-tile question=question}}{{/link-to}}
+      {{#link-to 'question' question.id}}Click to view more information about {{question.question}}{{/link-to}}{{question-tile question=question addToFav="addToFav"}}
+
     </li>
+
   {{/each}}
 </div>
 

@@ -2,4 +2,5 @@
   <h3>{{question.question}}</h3>
   <h5>by {{question.author}}</h5>
   {{fullQuestion}}
+  <button class="btn btn-default" {{action 'addToFav' question}}><span class="glyphicon glyphicon-heart"></span> </button>
 </div>
